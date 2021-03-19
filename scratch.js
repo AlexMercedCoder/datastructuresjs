@@ -1,12 +1,13 @@
 const Node = require("./node")
 const Stack = require("./stack")
+const Queue = require("./queue")
 
-const pancakes = new Stack()
+const splashmountainline = new Queue()
 
-pancakes.push("blueberry")
-pancakes.push("strawberry")
-pancakes.push("chocolate chip")
+splashmountainline.queue("Bob")
+splashmountainline.queue("Stacy")
+splashmountainline.queue("Steve")
 
-console.log(pancakes.pop())
-console.log(pancakes.pop())
-console.log(pancakes.pop())
+console.log(splashmountainline.dequeue())
+console.log(splashmountainline.dequeue())
+console.log(splashmountainline.dequeue())

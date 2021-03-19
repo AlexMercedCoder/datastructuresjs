@@ -1,7 +1,12 @@
 const Node = require("./node")
+const Stack = require("./stack")
 
-const num = new Node(1)
+const pancakes = new Stack()
 
-console.log(num.getData())
-num.setData(2)
-console.log(num.getData())
+pancakes.push("blueberry")
+pancakes.push("strawberry")
+pancakes.push("chocolate chip")
+
+console.log(pancakes.pop())
+console.log(pancakes.pop())
+console.log(pancakes.pop())
